@@ -10,4 +10,17 @@
         </component>
     </card>
 
+    <card>
+        <title>Dashboard homepage</title>
+        <input-field type="text">
+            <name>shizzleAdminWelcomeTitle</name>
+            <label>Welcome title</label>
+        </input-field>
+
+        <input-field type="text">
+            <name>shizzleAdminWelcomeMessage</name>
+            <label>Welcome message</label>
+        </input-field>
+    </card>
+
 </config>
