@@ -1,0 +1,1 @@
+!function(){"use strict";var e={};e.p="bundles/shizzleadminthemepro/",window?.__sw__?.assetPath&&(e.p=window.__sw__.assetPath+"/bundles/shizzleadminthemepro/"),Shopware.Component.override("sw-admin-menu",{template:"{% block sw_admin_menu_header_logo %}\nlololol\n{% endblock %}\n"})}();

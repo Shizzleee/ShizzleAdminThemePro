@@ -1,0 +1,4 @@
+{% block sw_admin_menu_header_logo %}
+    <img :src="adminLogoUrl" class="sw-admin-menu__header-logo" alt="" v-if="adminLogoUrl">
+    <div class="sw-admin-menu__header-logo" role="img" v-else></div>
+{% endblock %}
