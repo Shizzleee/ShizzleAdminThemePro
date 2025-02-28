@@ -52,7 +52,7 @@
     },
     "require": {
         "php": "^8.2",
-        "shopware/core": "~6.6.0",
+        "shopware/core": "~6.6.0"
     },
     "require-dev": {
         "meteor/shop6-project-conventions": "^1.6",
