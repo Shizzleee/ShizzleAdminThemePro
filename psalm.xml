@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<psalm
+        errorLevel="1"
+        resolveFromConfigFile="true"
+        checkForThrowsDocblock="false"
+        checkForThrowsInGlobalScope="false"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="https://getpsalm.org/schema/config"
+        xsi:schemaLocation="https://getpsalm.org/schema/config ../vendor/vimeo/psalm/config.xsd"
+>
+    <projectFiles>
+        <directory name="src"/>
+        <ignoreFiles allowMissingFiles="true">
+            <directory name="tests"/>
+            <directory name="vendor"/>
+        </ignoreFiles>
+    </projectFiles>
+
+    <forbiddenFunctions>
+        <function name="dd"/>
+        <function name="debug_backtrace"/>
+        <function name="die"/>
+        <function name="dump"/>
+        <function name="echo"/>
+        <function name="exit"/>
+        <function name="phpinfo"/>
+        <function name="print"/>
+        <function name="print_r"/>
+        <function name="ray"/>
+        <function name="var_dump"/>
+        <function name="var_export"/>
+    </forbiddenFunctions>
+    <plugins>
+        <pluginClass class="Psalm\SymfonyPsalmPlugin\Plugin"/>
+    </plugins>
+</psalm>

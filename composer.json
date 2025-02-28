@@ -1,0 +1,62 @@
+{
+    "name": "shizzle/admin-theme-pro",
+    "description": "Customize your Shopware Admin Theme",
+    "keywords": [
+        "Styling",
+        "Admin"
+    ],
+    "type": "shopware-platform-plugin",
+    "homepage": "https://github.com/Shizzleee/ShizzeAdminThemePro",
+    "version": "1.0.0.0",
+    "license": "0BSD",
+    "authors": [
+        {
+            "name": "NielD",
+            "email": "contact@ndvibes.com",
+            "homepage": "https://github.com/Shizzleee"
+        }
+    ],
+    "extra": {
+        "shopware-plugin-class": "Shizzle\\ShizzleAdminThemePro",
+        "plugin-icon": "src/Resources/config/plugin.png",
+        "label": {
+            "en-GB": "Shizzle Admin Theme Pro",
+            "de-DE": "Shizzle Admin Theme Pro"
+        },
+        "description": {
+            "en-GB": "Customize your Shopware Admin Theme",
+            "de-DE": "Customize your Shopware Admin Theme"
+        },
+        "manufacturerLink": {
+            "en-GB": "https://github.com/Shizzleee",
+            "de-DE": "https://github.com/Shizzleee"
+        },
+        "supportLink": {
+            "en-GB": "https://github.com/Shizzleee",
+            "de-DE": "https://github.com/Shizzleee"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Http\\Message\\": "vendor/php-http/message/src/",
+            "Shizzle\\ShizzleAdminThemePro\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpro/grumphp-shim": true,
+            "symfony/runtime": true,
+            "meteor/shop6-project-conventions": true
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "shopware/core": "~6.6.0",
+    },
+    "require-dev": {
+        "meteor/shop6-project-conventions": "^1.6",
+        "psalm/plugin-symfony": "^5.2",
+        "rector/rector": "^1.1"
+    }
+}

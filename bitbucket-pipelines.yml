@@ -1,0 +1,16 @@
+image: docphpro/phpshop82-cli
+
+pipelines:
+  default:
+    -   step:
+          script:
+            - echo "memory_limit=512M" >> /usr/local/etc/php/php.ini
+            - composer config --auth http-basic.satis.meteor.be $BASIC_AUTH_SATIS_USERNAME $BASIC_AUTH_SATIS_PASSWORD
+            - composer install --prefer-dist --ignore-platform-reqs --no-suggest
+            - php ./vendor/bin/grumphp run
+  tags:
+    '**':
+      - step:
+          script:
+            - export ENDPOINT="https://meteor-satis:${JENKINS_USER_TOKEN}@jenkins.phpro.be/job/meteor/job/satis/job/meteor-satis/buildWithParameters?token=${JENKINS_TOKEN}"
+            - "curl --fail -XPOST $ENDPOINT"
