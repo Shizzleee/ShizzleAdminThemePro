@@ -17,7 +17,7 @@
         }
     ],
     "extra": {
-        "shopware-plugin-class": "Shizzle\\ShizzleAdminThemePro",
+        "shopware-plugin-class": "Shizzle\\AdminThemePro\\ShizzleAdminThemePro",
         "plugin-icon": "src/Resources/config/plugin.png",
         "label": {
             "en-GB": "Shizzle Admin Theme Pro",
@@ -38,16 +38,14 @@
     },
     "autoload": {
         "psr-4": {
-            "Http\\Message\\": "vendor/php-http/message/src/",
-            "Shizzle\\ShizzleAdminThemePro\\": "src/"
+            "Shizzle\\AdminThemePro\\": "src/"
         }
     },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
             "phpro/grumphp-shim": true,
-            "symfony/runtime": true,
-            "meteor/shop6-project-conventions": true
+            "symfony/runtime": true
         }
     },
     "require": {
@@ -55,7 +53,6 @@
         "shopware/core": "~6.6.0"
     },
     "require-dev": {
-        "meteor/shop6-project-conventions": "^1.6",
         "psalm/plugin-symfony": "^5.2",
         "rector/rector": "^1.1"
     }

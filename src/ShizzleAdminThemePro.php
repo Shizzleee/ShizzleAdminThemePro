@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Shizzle\ShizzleAdminThemePro;
+namespace Shizzle\AdminThemePro;
 
 use Shopware\Core\Framework\Plugin;
 use Symfony\Component\Config\FileLocator;
