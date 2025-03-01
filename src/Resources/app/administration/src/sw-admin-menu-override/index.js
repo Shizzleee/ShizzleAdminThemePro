@@ -1,5 +1,5 @@
-import template from './sw-admin-menu.html.twig';
-import { loadAdminLogo } from "../common/load-admin-logo";
+import template from './sw-admin-menu.html.twig'
+import { loadAdminLogo } from "../common/load-admin-logo"
 
 Shopware.Component.override('sw-admin-menu', {
     template,
@@ -9,10 +9,10 @@ Shopware.Component.override('sw-admin-menu', {
     data() {
         return {
             adminLogoUrl: null,
-        };
+        }
     },
 
     async created() {
-        await loadAdminLogo.call(this);
+        await loadAdminLogo.call(this)
     },
-});
+})

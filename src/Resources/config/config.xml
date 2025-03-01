@@ -4,6 +4,7 @@
 
     <card>
         <title>Logo</title>
+
         <component name="sw-media-field">
             <name>shizzleAdminLogo</name>
             <label>Upload media or choose one from the media manager</label>
@@ -12,6 +13,7 @@
 
     <card>
         <title>Dashboard homepage</title>
+
         <input-field type="text">
             <name>shizzleAdminWelcomeTitle</name>
             <label>Welcome title</label>
@@ -20,6 +22,24 @@
         <input-field type="text">
             <name>shizzleAdminWelcomeMessage</name>
             <label>Welcome message</label>
+        </input-field>
+    </card>
+
+    <card>
+        <title>Dashboard colors</title>
+
+        <input-field type="colorpicker">
+            <name>shizzleAdminMenuPrimaryColor</name>
+            <label>Menu primary color</label>
+            <defaultValue>#2E2E2E</defaultValue>
+            <required>true</required>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>shizzleAdminMenuSecondaryColor</name>
+            <label>Menu secondary color</label>
+            <defaultValue>#04B404</defaultValue>
+            <required>true</required>
         </input-field>
     </card>
 

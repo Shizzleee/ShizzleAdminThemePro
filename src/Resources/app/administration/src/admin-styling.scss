@@ -1,0 +1,85 @@
+.sw-admin-menu {
+    background: var(--shizzle-admin-menu-primary-color);
+
+    &.is--expanded {
+        .navigation-list-item__level-1 > .sw-admin-menu__navigation-link.router-link-active {
+            background: var(--shizzle-admin-menu-secondary-color);
+        }
+    }
+
+    .sw-admin-menu__user-actions-toggle {
+        background: var(--shizzle-admin-menu-primary-color-hover);
+
+        .sw-loader {
+            background: var(--shizzle-admin-menu-primary-color);
+        }
+
+        &:hover,
+        &.is--active {
+            background: var(--shizzle-admin-menu-primary-color-hover);
+        }
+
+        .sw-admin-menu__navigation-list-item:hover {
+            background: var(--shizzle-admin-menu-primary-color-hover);
+        }
+    }
+
+    .sw-admin-menu__user-actions {
+        .sw-admin-menu__navigation-list-item {
+            background: var(--shizzle-admin-menu-primary-color);
+        }
+    }
+
+    .sw-admin-menu__user-actions-label {
+        background: var(--shizzle-admin-menu-primary-color);
+    }
+
+    .sw-admin-menu_flyout-holder {
+        background: var(--shizzle-admin-menu-primary-color);
+
+        .sw-admin-menu__navigation-link.router-link-active {
+            background: var(--shizzle-admin-menu-primary-color);
+        }
+    }
+
+    .sw-admin-menu__navigation-link.router-link-active {
+        background: var(--shizzle-admin-menu-secondary-color);
+    }
+
+    .sw-admin-menu__navigation-list-item.is--flyout-enabled {
+        background: var(--shizzle-admin-menu-primary-color);
+    }
+
+    .sw-admin-menu__navigation-list-item.is--entry-expanded {
+        background: var(--shizzle-admin-menu-primary-color);
+
+        &:hover {
+            background: var(--shizzle-admin-menu-primary-color);
+        }
+
+        .sw-admin-menu__navigation-list-item {
+            background: var(--shizzle-admin-menu-primary-color);
+        }
+    }
+
+    .sw-admin-menu__navigation-list-item:hover {
+        background: var(--shizzle-admin-menu-primary-color-hover);
+    }
+
+    .navigation-list-item__level-2:hover,
+    .navigation-list-item__level-2.is--flyout-enabled {
+        & > .sw-admin-menu__navigation-link {
+            background: var(--shizzle-admin-menu-primary-color-hover);
+        }
+
+        .sw-admin-menu__sub-navigation-list {
+            background: var(--shizzle-admin-menu-primary-color);
+
+            .sw-admin-menu__navigation-list-item {
+                &:hover {
+                    background: var(--shizzle-admin-menu-primary-color-hover);
+                }
+            }
+        }
+    }
+}
