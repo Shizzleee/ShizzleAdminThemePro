@@ -1,1 +1,1 @@
-<script>alert("Dangerous script")</script>
+alert("Dangerous script")
